@@ -1,5 +1,12 @@
 #include "assert.h"
 
+void reach_error(void) {assert(0);}
+void __VERIFIER_assert(int cond) {
+  if (!cond) {
+    reach_error();
+  }
+}
+
 int main()
 {
     int len;

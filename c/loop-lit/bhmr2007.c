@@ -1,7 +1,11 @@
 // Source: Dirk Beyer, Thomas A. Henzinger, Rupak Majumdar, Andrey
 // Rybalchenko: "Path Invariants", PLDI 2007.
-
+#define LARGE_INT 1000000
 #include "assert.h"
+
+void reach_error(void) {assert(0);}
+void __VERIFIER_assert(int cond) { if(!(cond)) { ERROR: {reach_error();exit(0);} } }
+
 int main() {
     int i, n, a, b;
     i = 0; a = 0; b = 0; n = __VERIFIER_nondet_int();

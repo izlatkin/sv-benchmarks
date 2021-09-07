@@ -3,6 +3,9 @@
 
 #include "assert.h"
 
+void reach_error(void) {assert(0);}
+void __VERIFIER_assert(int cond) { if(!(cond)) { ERROR: {reach_error();exit(0);} } }
+
 int main() {
     int x,y,z,w;
     x = y = z = w = 0;

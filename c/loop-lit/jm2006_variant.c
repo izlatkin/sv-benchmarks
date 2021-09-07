@@ -1,8 +1,11 @@
 // Source: Credited to Anubhav Gupta
 // appears in Ranjit Jhala, Ken McMillan: "A Practical and Complete Approach
 // to Predicate Refinement", TACAS 2006
-
+#define LARGE_INT 1000000
 #include "assert.h"
+
+void reach_error(void) {assert(0);}
+void __VERIFIER_assert(int cond) { if(!(cond)) { ERROR: {reach_error();exit(0);} } }
 
 int main() {
     int i, j;

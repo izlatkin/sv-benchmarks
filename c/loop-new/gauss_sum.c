@@ -1,5 +1,8 @@
 #include "assert.h"
 
+void reach_error(void) {assert(0);}
+void __VERIFIER_assert(int cond) { if(!(cond)) { ERROR: {reach_error();exit(0);} } }
+
 int main() {
     int n, sum, i;
     n = __VERIFIER_nondet_int();

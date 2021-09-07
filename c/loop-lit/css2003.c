@@ -1,7 +1,11 @@
 // Source: Michael Colon, Sriram Sankaranarayanan, Henny Sipma: "Linear
 // Invariant Generation using Non-Linear Constraint Solving", CAV 2003.
-
+#define LARGE_INT 1000000
 #include "assert.h"
+
+void reach_error(void) {assert(0);}
+void __VERIFIER_assert(int cond) { if(!(cond)) { ERROR: {reach_error();exit(0);} } }
+
 int main() {
     int i,j,k;
     i = 1;
